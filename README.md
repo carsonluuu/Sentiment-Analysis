@@ -13,7 +13,7 @@
 		|--	twitter_streaming.py
 		|--	twitter_user.py           // Stores credentials used to get tweets using Twitter's API
 		|--	get_training_and_test.py  // Train and test involing
-		|--	index.json				  // Emoji ratings JSON file
+		|--	index.json		  // Emoji ratings JSON file
 	bag_of_words:
 		|--	moodbusters_reader.py
 		|--	moodbusters_test.py
