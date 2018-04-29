@@ -22,3 +22,6 @@
 		run.sh
 		test.py
 		train.py
+
+Web-application:
+<img align="center" src="sentiment-visualization/WEBUI.png" alt="Map" style="width: 400px;center;"/>
