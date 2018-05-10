@@ -18,6 +18,8 @@ While the kNN model produced reasonable output, the logistic regression and SVM 
 
 According to the kNN model, the positivity rate experienced high peaks around 11/23, 11/26, and 12/1, and dipped considerably on 11/24 and 11/29. In general, the curve predicted by the kNN model varied wildly and did not follow the curve predicted by the testing data. This curve suggests that people were heavily influenced by current events.
 
+<img align="center" src="codes/res.png" alt="res"/>
+
 Our goal in creating these predictors was to create a model to predict a Twitter user’s mood based on his or her tweet. With the model we create, we would then be able to feed in Tweets from a large number of users and find the mood of a large number of users. For our project specifically, we could use this data to observe how mood changes over time from before Thanksgiving to afterward. Furthermore, we could continue to use this model to observe how other major events affect the mood of people in an area.
 
 Summary
