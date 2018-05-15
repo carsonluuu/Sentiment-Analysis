@@ -52,7 +52,7 @@ File Information
 Brain.js
 ----------------
 `brain.js` is a library of [Neural Networks](http://en.wikipedia.org/wiki/Artificial_neural_network) written in JavaScript.
-# Examples
+## Examples
 Here's an example showcasing how to approximate the XOR function using `brain.js`:
 More info on config [here](https://github.com/BrainJS/brain.js/blob/develop/src/neural-network.js#L31).
 
@@ -131,6 +131,7 @@ The constructor has three parameters:
 * Language: see below for supported languages.
 * Stemmer: to increase the coverage of the sentiment analyzer a stemmer may be provided. May be `null`.
 * Vocabulary: sets the type of vocabulary, `"afinn"`, `"senticon"` or `"pattern"` are valid values.
+
 Web-application
 ------
 <img align="center" src="sentiment-visualization/WEB_UI.png" alt="Map" style="width: 400px;center;"/>
