@@ -49,6 +49,88 @@ File Information
 		test.py
 		train.py
 
+Brain.js
+----------------
+`brain.js` is a library of [Neural Networks](http://en.wikipedia.org/wiki/Artificial_neural_network) written in JavaScript.
+# Examples
+Here's an example showcasing how to approximate the XOR function using `brain.js`:
+More info on config [here](https://github.com/BrainJS/brain.js/blob/develop/src/neural-network.js#L31).
+
+```javascript
+//provide optional config object (or undefined). Defaults shown.
+var config = {
+    binaryThresh: 0.5,     // ¯\_(ツ)_/¯
+    hiddenLayers: [3],     // array of ints for the sizes of the hidden layers in the network
+    activation: 'sigmoid' // Supported activation types ['sigmoid', 'relu', 'leaky-relu', 'tanh']
+}
+//create a simple feed forward neural network with backpropagation
+var net = new brain.NeuralNetwork();
+
+net.train([{input: [0, 0], output: [0]},
+           {input: [0, 1], output: [1]},
+           {input: [1, 0], output: [1]},
+           {input: [1, 1], output: [0]}]);
+
+var output = net.run([1, 0]);  // [0.987]
+```
+or
+More info on config [here](https://github.com/BrainJS/brain.js/blob/develop/src/recurrent/rnn.js#L726).
+```javascript
+//provide optional config object, defaults shown.
+var config = {
+    inputSize: 20,
+    inputRange: 20,
+    hiddenSizes:[20,20],
+    outputSize: 20,
+    learningRate: 0.01,
+    decayRate: 0.999,
+}
+//create a simple recurrent neural network
+var net = new brain.recurrent.RNN(config);
+
+net.train([{input: [0, 0], output: [0]},
+           {input: [0, 1], output: [1]},
+           {input: [1, 0], output: [1]},
+           {input: [1, 1], output: [0]}]);
+
+var output = net.run([0, 0]);  // [0]
+output = net.run([0, 1]);  // [1]
+output = net.run([1, 0]);  // [1]
+output = net.run([1, 1]);  // [0]
+```
+
+However, there is no reason to use a neural network to figure out XOR. (-: So, here is a more involved, realistic example:
+[Demo: training a neural network to recognize color contrast](https://brain.js.org/).
+
+Natural
+---------
+"Natural" is a general natural language facility for nodejs. Tokenizing,
+stemming, classification, phonetics, tf-idf, WordNet, string similarity,
+and some inflections are currently supported.
+
+## Installation
+
+If you're just looking to use natural without your own node application,
+you can install via NPM like so:
+
+    npm install natural
+
+If you're interested in contributing to natural, or just hacking on it, then by all
+means fork away!
+
+## Sentiment Analysis
+This is a simple sentiment analysis algorithm based on a vocabulary that assigns polarity to words. The algorithm calculates the sentiment of a piece of text by summing the polarity of each word and normalizing with the length of the sentence. If a negation occurs the result is made negative. It is used as follows:
+```javascript
+var Analyzer = require('natural').SentimentAnalyzer;
+var stemmer = require('natural').PorterStemmer;
+var analyzer = new Analyzer("English", stemmer, "afinn")
+console.log(analyzer.getSentiment("I like cherries"));
+// 0.6666666666666666
+```
+The constructor has three parameters:
+* Language: see below for supported languages.
+* Stemmer: to increase the coverage of the sentiment analyzer a stemmer may be provided. May be `null`.
+* Vocabulary: sets the type of vocabulary, `"afinn"`, `"senticon"` or `"pattern"` are valid values.
 Web-application
 ------
 <img align="center" src="sentiment-visualization/WEB_UI.png" alt="Map" style="width: 400px;center;"/>
