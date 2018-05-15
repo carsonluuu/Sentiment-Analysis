@@ -102,8 +102,8 @@ output = net.run([1, 1]);  // [0]
 However, there is no reason to use a neural network to figure out XOR. (-: So, here is a more involved, realistic example:
 [Demo: training a neural network to recognize color contrast](https://brain.js.org/).
 
-Natural
----------
+# Natural
+
 "Natural" is a general natural language facility for nodejs. Tokenizing,
 stemming, classification, phonetics, tf-idf, WordNet, string similarity,
 and some inflections are currently supported.
@@ -132,6 +132,5 @@ The constructor has three parameters:
 * Stemmer: to increase the coverage of the sentiment analyzer a stemmer may be provided. May be `null`.
 * Vocabulary: sets the type of vocabulary, `"afinn"`, `"senticon"` or `"pattern"` are valid values.
 
-Web-application
-------
+# Web-application
 <img align="center" src="sentiment-visualization/WEB_UI.png" alt="Map" style="width: 400px;center;"/>
