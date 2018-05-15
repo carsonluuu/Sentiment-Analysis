@@ -49,8 +49,8 @@ File Information
 		test.py
 		train.py
 
-Brain.js
-----------------
+# Brain.js
+
 `brain.js` is a library of [Neural Networks](http://en.wikipedia.org/wiki/Artificial_neural_network) written in JavaScript.
 ## Examples
 Here's an example showcasing how to approximate the XOR function using `brain.js`:
