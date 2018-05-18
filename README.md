@@ -134,3 +134,4 @@ The constructor has three parameters:
 
 # Web-application
 <img align="center" src="sentiment-visualization/WEB_UI.png" alt="Map" style="width: 400px;center;"/>
+
