@@ -1,6 +1,6 @@
 # Sentiment-Analysis
 *In this project, we aim to explore how the Thanksgiving holiday affect individual’s mood. For the sake of simplicity, we are
-choosing to only explore how people in California are affected by the holiday’s approach and passing. In addition, we want to see if an individual’s mood is affected by the day of the week and the outside temperature.*
+choosing to only explore how people in California are affected by the holiday’s approach and passing. In addition, we want to see if an individual’s mood is affected by the day of the week*
 
 Introduction
 -----
