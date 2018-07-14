@@ -133,5 +133,6 @@ The constructor has three parameters:
 * Vocabulary: sets the type of vocabulary, `"afinn"`, `"senticon"` or `"pattern"` are valid values.
 
 # Web-application
+
 <img align="center" src="sentiment-visualization/WEB_UI.png" alt="Map" style="width: 400px;center;"/>
 
