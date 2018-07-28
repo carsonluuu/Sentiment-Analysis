@@ -125,7 +125,7 @@ var Analyzer = require('natural').SentimentAnalyzer;
 var stemmer = require('natural').PorterStemmer;
 var analyzer = new Analyzer("English", stemmer, "afinn")
 console.log(analyzer.getSentiment("I like cherries"));
-// 0.6666666666666666
+// 0.666666666666666
 ```
 The constructor has three parameters:
 * Language: see below for supported languages.
