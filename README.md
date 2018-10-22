@@ -7,8 +7,7 @@ Introduction
 Sentiment analysis, the automated extraction of emotional data from text or speech (Kharde & Sonawane, 2016), has long been
 a favored tool for its ability to gauge consumers’ opinions and feelings en masse with minimal input from the analyst’s end. It is often performed on Twitter and Facebook data to gain insight into how the public views a particular brand or a political candidate, or to measure the trust placed into a particular financial stock (Feldman, 2013). As such, we feel that sentiment analysis would be the perfect tool for answering a sociological question such as ours.
 
-We will first gather tweets from Twitter, which can serve as a proxy to individuals’ thoughts and the general public mood
-(Bollen, 2011). Next, we will perform sentiment analysis on each tweet to determine whether it is happy or sad. Then, we will split the tweets up by date and tally up the number of happy and sad tweets for each day to determine how happy or sad individuals in different regions of California felt on each day in November. Finally, we will analyze the trends in the total numbers of happy and sad tweets and compare those trends with recent events to answer our question.
+We will first gather a lot of tweets from Twitter, which can serve as a proxy to individuals’ thoughts and the general public mood(Bollen, 2011). Next, we will perform sentiment analysis on each tweet to determine whether it is happy or sad. Then, we will split the tweets up by date and tally up the number of happy and sad tweets for each day to determine how happy or sad individuals in different regions of California felt on each day in November. Finally, we will analyze the trends in the total numbers of happy and sad tweets and compare those trends with recent events to answer our question.
 
 Result
 ------
